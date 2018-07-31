@@ -3,13 +3,11 @@
 require "modelo/usuarioModelo.php";
 require "servicos/correiosServico.php";
 
-/** anon */
 function index() {
     $dados["usuarios"] = pegarTodosUsuarios();
     exibir("usuario/listar", $dados);
 }
 
-/** admin */
 function adicionar() {
     if (ehPost()) {
         extract($_POST);
@@ -25,9 +23,8 @@ function deletar($id) {
     redirect("usuario/index");
 }
 
-/** admin */
 function editar($id) {
-    if(ehPost()) {
+    if (ehPost()) {
         $nome = $_POST["nome"];
         $email = $_POST["email"];
         alert(editarUsuario($id, $nome, $email));
@@ -39,7 +36,6 @@ function editar($id) {
     }
 }
 
-/** @papel('admin') @method('POST') */
 function visualizar($id) {
     $dados['usuario'] = pegarUsuarioPorId($id);
     exibir("usuario/visualizar", $dados);

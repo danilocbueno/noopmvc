@@ -1,12 +1,48 @@
 Convencoes
 =======
 
-##Configuracoes basicas
+## Estrutura do projeto
+A estrutura do projeto é ilustrada abaixo:
+`dist/
+├── bibliotecas/
+│   ├── alert.php
+│   ├── auth.php
+│   ├── mysqli.php
+│   ├── utils.php
+│   └── view.php
+└── controlador/
+│   ├── usuarioControlador.php
+│   └── loginControlador.php
+└── modelo/
+│   └── usuarioModelo.php
+└── publico/
+│   ├── css/
+|   |   └── app.css
+│   └── js/
+|      └── app.js
+└── servicos/
+|    ├── correiosServico.php
+|    └── bootstrap.min.js.map
+└── visao/
+│   ├── login/
+|   |   └── index.view.php
+│   ├── usuario/
+|   |   ├── formulario.view.php
+|   |   ├── listar.view.php
+|   |   └── visualizar.view.php
+|   ├── cabecalho.php
+|   └── template.php
+├── .htaccess
+├── app.php
+├── index.php
+└── readme.md`
+
+## Configuracoes basicas
 base url
 
-##Rotas
+## Rotas
 As rotas sao convencionadas a seguir o padrao:
-http://localhost/seuprojeto/<CONTROLADOR>/<ACAO>
+`http://localhost/seuprojeto/<CONTROLADOR>/<ACAO>`
 
 O noopmvc utiliza o padrao Front Controller, isso significa que todas as requisicoes (uma requisicao eh qualquer chamada para algum recurso do seu site) vao ser atendidas pelo mesmo arquivo, no caso o arquivo index.php. Ele sera responsavel por tratar essa requisicao e repassar para o controlador especifico que vai lidar com aquela requisicao. Voce nao deve alterar o arquivo index.php a menos que tenha certeza absoluta do que esta fazendo.
 

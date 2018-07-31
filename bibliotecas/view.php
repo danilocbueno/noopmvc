@@ -2,12 +2,12 @@
 
 function exibir($view, $data = array()) {
     $viewFilePath = 'visao/' . $view . '.view.php';
-    
+
     if (!file_exists($viewFilePath)) {
         die("Nao encontrei sua view!");
     }
-    
-    extract($data); 
+
+    extract($data);
 
     require("visao/template.php");
 }
@@ -18,10 +18,9 @@ function redirect($path) {
 }
 
 function assinalarCampo($valorA, $valorB) {
-    if($valorA == $valorB) {
+    if ($valorA == $valorB) {
         return 'selected';
     }
 }
-
 
 ?>

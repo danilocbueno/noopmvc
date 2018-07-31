@@ -1,13 +1,13 @@
 <?php
 
 function alertInit() {
-    if(!isset($_SESSION["alert"])){
+    if (!isset($_SESSION["alert"])) {
         $_SESSION["alert"] = array();
     }
 }
 
 function alertGetMessages() {
-    if(!empty($_SESSION["alert"])) {
+    if (!empty($_SESSION["alert"])) {
         return $_SERVER["alert"];
     }
 }
@@ -23,9 +23,9 @@ function alertClear() {
 }
 
 function alertComponentRender() {
-    if(!empty($_SESSION["alert"])) {
-        
-        $msgs = implode(',',$_SESSION["alert"]);
+    if (!empty($_SESSION["alert"])) {
+
+        $msgs = implode(',', $_SESSION["alert"]);
         $alertLevel = $_SESSION["alertLevel"];
 
         $html = '<div class="alert alert-' . $alertLevel . '" role="alert">';
@@ -33,7 +33,7 @@ function alertComponentRender() {
         $html .= '</div>';
 
         alertClear();
-        
+
         echo $html;
     }
 }
