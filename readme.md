@@ -2,40 +2,43 @@ Convencoes
 =======
 
 ## Estrutura do projeto
-A estrutura do projeto é ilustrada abaixo:
-`dist/
-├── bibliotecas/
-│   ├── alert.php
-│   ├── auth.php
-│   ├── mysqli.php
-│   ├── utils.php
-│   └── view.php
-└── controlador/
-│   ├── usuarioControlador.php
-│   └── loginControlador.php
-└── modelo/
-│   └── usuarioModelo.php
-└── publico/
-│   ├── css/
-|   |   └── app.css
-│   └── js/
-|      └── app.js
-└── servicos/
-|    ├── correiosServico.php
-|    └── bootstrap.min.js.map
-└── visao/
-│   ├── login/
-|   |   └── index.view.php
-│   ├── usuario/
-|   |   ├── formulario.view.php
-|   |   ├── listar.view.php
-|   |   └── visualizar.view.php
-|   ├── cabecalho.php
-|   └── template.php
-├── .htaccess
-├── app.php
-├── index.php
-└── readme.md`
+    A estrutura do projeto é ilustrada abaixo:
+    dist/
+    ├── bibliotecas/
+    │   ├── alert.php
+    │   ├── auth.php
+    │   ├── mysqli.php
+    │   ├── utils.php
+    │   └── view.php
+    └── controlador/
+    │   ├── usuarioControlador.php
+    │   └── loginControlador.php
+    └── modelo/
+    │   └── usuarioModelo.php
+    └── publico/
+    │   ├── css/
+    |   |   └── app.css
+    │   └── js/
+    |      └── app.js
+    └── servicos/
+    |    ├── correiosServico.php
+    |    └── bootstrap.min.js.map
+    └── visao/
+    │   ├── login/
+    |   |   └── index.view.php
+    │   ├── usuario/
+    |   |   ├── formulario.view.php
+    |   |   ├── listar.view.php
+    |   |   └── visualizar.view.php
+    |   ├── cabecalho.php
+    |   └── template.php
+    ├── .htaccess
+    ├── app.php
+    ├── index.php
+    └── readme.md
+
+
+O framework utiliza o padrão arquitetural MVC, logo sua estrutura está baseada neste padrão apresentando os três principais objetos da arquitetura, a pasta `modelo`, `controlador` e `visao`. 
 
 ## Configuracoes basicas
 base url
