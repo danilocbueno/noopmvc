@@ -1,15 +1,18 @@
-Convencoes
+noopMVC - Not Object-Oriented Programming MVC
 =======
 
+Este é um projeto desenvolvido com propósito educacional e não deve ser usado em projetos reais. A ideia geral do projeto é apresentar as ideias e conceitos de arquitetura, modelos e framework para alunos que ainda não conhecem a orientação a objetos.
+ 
 ## Estrutura do projeto
-    A estrutura do projeto é ilustrada abaixo:
-    dist/
+A estrutura do projeto é ilustrada abaixo:
+
+    noopMVC/
     ├── bibliotecas/
     │   ├── alert.php
     │   ├── auth.php
     │   ├── mysqli.php
     │   ├── utils.php
-    │   └── view.php
+    │   └── visao.php
     └── controlador/
     │   ├── usuarioControlador.php
     │   └── loginControlador.php
@@ -21,22 +24,20 @@ Convencoes
     │   └── js/
     |      └── app.js
     └── servicos/
-    |    ├── correiosServico.php
-    |    └── bootstrap.min.js.map
+    |    └── correiosServico.php
     └── visao/
     │   ├── login/
-    |   |   └── index.view.php
+    |   |   └── index.visao.php
     │   ├── usuario/
-    |   |   ├── formulario.view.php
-    |   |   ├── listar.view.php
-    |   |   └── visualizar.view.php
+    |   |   ├── formulario.visao.php
+    |   |   ├── listar.visao.php
+    |   |   └── visualizar.visao.php
     |   ├── cabecalho.php
     |   └── template.php
     ├── .htaccess
     ├── app.php
     ├── index.php
     └── readme.md
-
 
 O framework utiliza o padrão arquitetural MVC, logo sua estrutura está baseada neste padrão apresentando os três principais objetos da arquitetura, a pasta `modelo`, `controlador` e `visao`. 
 
