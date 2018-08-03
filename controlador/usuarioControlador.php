@@ -12,7 +12,7 @@ function adicionar() {
     if (ehPost()) {
         extract($_POST);
         alert(adicionarUsuario($nome, $email, $sexo));
-        redirect("usuario/index");
+        redirecionar("usuario/index");
     } else {
         exibir("usuario/formulario");
     }
@@ -20,7 +20,7 @@ function adicionar() {
 
 function deletar($id) {
     alert(deletarUsuario($id));
-    redirect("usuario/index");
+    redirecionar("usuario/index");
 }
 
 function editar($id) {
@@ -28,7 +28,7 @@ function editar($id) {
         $nome = $_POST["nome"];
         $email = $_POST["email"];
         alert(editarUsuario($id, $nome, $email));
-        redirect("usuario/index");
+        redirecionar("usuario/index");
     } else {
         $dados['usuario'] = pegarUsuarioPorId($id);
         $dados['acao'] = "./usuario/editar/$id";
@@ -39,9 +39,4 @@ function editar($id) {
 function visualizar($id) {
     $dados['usuario'] = pegarUsuarioPorId($id);
     exibir("usuario/visualizar", $dados);
-}
-
-function frete($cep) {
-    $val = (calcular_frete('18202000', '18208450', 2, 0, '41106'));
-    var_dump($val);
 }

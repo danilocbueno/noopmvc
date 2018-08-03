@@ -20,7 +20,7 @@ function index() {
 function logout() {
     authLogout();
     alert("deslogado com sucesso!");
-    redirect("usuario");
+    redirecionar("usuario");
 }
 
 ?>

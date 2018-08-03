@@ -1,10 +1,10 @@
 <?php
 
 function exibir($view, $data = array()) {
-    $viewFilePath = 'visao/' . $view . '.view.php';
+    $viewFilePath = 'visao/' . $view . '.visao.php';
 
     if (!file_exists($viewFilePath)) {
-        die("Nao encontrei sua view!");
+        die("Nao encontrei sua VISAO!");
     }
 
     extract($data);
@@ -12,7 +12,7 @@ function exibir($view, $data = array()) {
     require("visao/template.php");
 }
 
-function redirect($path) {
+function redirecionar($path) {
     $finalPath = BASE_URL . $path;
     header("location: $finalPath");
 }
