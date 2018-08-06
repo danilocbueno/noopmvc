@@ -4,7 +4,7 @@ function exibir($view, $data = array()) {
     $viewFilePath = 'visao/' . $view . '.visao.php';
 
     if (!file_exists($viewFilePath)) {
-        die("Nao encontrei sua VISAO!");
+        die("Nao foi encontrado o arquivo '$viewFilePath' correspondente a visao requisitada!");
     }
 
     extract($data);

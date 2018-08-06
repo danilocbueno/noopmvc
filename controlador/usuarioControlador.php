@@ -1,7 +1,6 @@
 <?php
 
 require "modelo/usuarioModelo.php";
-require "servicos/correiosServico.php";
 
 function index() {
     $dados["usuarios"] = pegarTodosUsuarios();

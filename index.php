@@ -13,7 +13,7 @@ if(!$controllerName && CONTROLADOR_PADRAO) {
 $controllerFileName = "controlador/" . $controllerName . "Controlador.php";
 
 if (!file_exists($controllerFileName)) 
-    die("Nao foi encontrado o arquivo: '$controllerFileName' do controlador"); 
+    die("Nao foi encontrado o arquivo: '$controllerFileName' para enviar a solicitacao!"); 
 
 require_once $controllerFileName;
 
