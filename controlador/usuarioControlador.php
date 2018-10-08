@@ -7,6 +7,11 @@ function index() {
     exibir("usuario/listar", $dados);
 }
 
+
+function ola() {
+    echo "Ola!";
+}
+
 function adicionar() {
     if (ehPost()) {
         extract($_POST);
