@@ -37,5 +37,4 @@ function deletarUsuario($id) {
     $resultado = mysqli_query($cnx = conn(), $sql);
     if(!$resultado) { die('Erro ao deletar usuário' . mysqli_error($cnx)); }
     return 'Usuario deletado com sucesso!';
-            
 }

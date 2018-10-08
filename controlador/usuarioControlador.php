@@ -7,7 +7,6 @@ function index() {
     exibir("usuario/listar", $dados);
 }
 
-
 function ola() {
     echo "Ola!";
 }

@@ -10,6 +10,10 @@ if(!$controllerName && CONTROLADOR_PADRAO) {
 	$controllerName = CONTROLADOR_PADRAO;
 }
 
+if($controllerName=="?XDEBUG_SESSION_START=netbeans-xdebug")  {
+    $controllerName = CONTROLADOR_PADRAO;
+}
+
 $controllerFileName = "controlador/" . $controllerName . "Controlador.php";
 
 if (!file_exists($controllerFileName)) 
